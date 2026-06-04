@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin Paleti | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Glass Navbar -->
+    <nav class="glass-nav">
+        <div class="nav-left">
+            <span class="nav-name">EDWIN PALETI</span>
+        </div>
+        <div class="nav-center">
+            <a href="#" class="nav-link active">HOME</a>
+            <a href="#works-grid" class="nav-link">PROJECTS</a>
+        </div>
+        <div class="nav-right">
+            <a href="mailto:edwinpaleti@gmail.com" class="icon-link" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="https://wa.me/919100711931" class="icon-link" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+        </div>
+    </nav>
+
+    <main class="portfolio-container">
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-image-col">
+                <img src="works/edwin.jpeg" alt="Edwin Paleti">
+            </div>
+            <div class="hero-text-col">
+                <span class="overline"><span class="dot"></span> WELCOME TO MY PORTFOLIO</span>
+                <h1 class="hero-title">
+                    <span class="title-solid">EDWIN</span><br>
+                    <span class="title-gradient">PALETI</span>
+                </h1>
+                <p class="hero-subtitle">DESIGNER <span class="dot-sep">•</span> DEVELOPER <span class="dot-sep">•</span> PROBLEM SOLVER</p>
+                <p class="hero-desc">I'm Edwin Paleti, a branding designer and visual creative passionate about crafting impactful brand identities and meaningful visual experiences. Over the years, I have worked with businesses across a wide range of industries, gaining valuable insight into different markets, audiences, and brand challenges. My expertise includes branding, logo design, packaging design, marketing creatives, and visual storytelling. I focus on creating clean, strategic, and memorable designs that help brands communicate their values, build trust, and stand out in competitive markets. Driven by creativity, attention to detail, and continuous learning, I strive to deliver design solutions that are both visually compelling and purpose-driven.</p>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO GRID HEADER -->
+        <div class="portfolio-grid-header">
+            <div class="filter-pills">
+                <button class="pill active" data-filter="all">ALL</button>
+                <button class="pill" data-filter="logo">LOGO DESIGN</button>
+                <button class="pill" data-filter="packaging">PACKAGING</button>
+                <button class="pill" data-filter="social">SOCIAL MEDIA</button>
+                <button class="pill" data-filter="brochures">BROCHURES</button>
+                <button class="pill" data-filter="video">VIDEO EDITING</button>
+            </div>
+        </div>
+
+        <section id="works-grid" class="works-grid">
+            <!-- Cards injected by JS -->
+        </section>
+
+        <!-- FILTERED IMAGE GALLERY (Hidden by default) -->
+        <section id="filtered-gallery" class="masonry-grid" style="display: none;">
+            <!-- Individual images injected by JS when filtering -->
+        </section>
+
+        <!-- DETAIL VIEW SECTION (Hidden by default) -->
+        <section id="brand-detail" class="brand-detail" style="display: none;">
+            <div class="detail-header">
+                <button id="back-btn" class="pill outline-pill">&larr; BACK TO ALL WORKS</button>
+                <h2 id="brand-title">Brand Name</h2>
+            </div>
+            <div class="masonry-grid" id="masonry-gallery">
+                <!-- Images injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
